@@ -8,7 +8,7 @@ import 'package:sofvence_task/common%20Widgets/Button/Button.dart';
 import 'package:geolocator/geolocator.dart';
 
 
-import '../../Alarm/alarm_screen.dart';
+import '../../Alarm/Screen/alarm_screen.dart';
 
 class LocationScreen extends StatefulWidget {
   const LocationScreen({super.key});
@@ -148,7 +148,7 @@ class _LocationScreenState extends State<LocationScreen> {
                       Text(address ?? "Use Current Location ",style: TextStyle(
                           fontSize: 20,
                           color: Colors.white),),
-                      Icon(Icons.location_on,color: Colors.white,)
+                      Icon(Icons.location_on_outlined,color: Colors.white,)
                     ],
                   ),
                 ),
@@ -160,7 +160,9 @@ class _LocationScreenState extends State<LocationScreen> {
                 ontabe: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => AlarmScreen()),
+                    MaterialPageRoute(builder: (context) => AlarmScreen(
+                      address: address??"Location not selected",
+                    )),
                   );
                 },
               ),
