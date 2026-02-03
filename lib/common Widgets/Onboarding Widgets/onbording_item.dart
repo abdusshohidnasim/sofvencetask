@@ -1,4 +1,4 @@
-import 'package:sofvence_task/common%20Widgets/onboardinginfo.dart';
+import 'package:sofvence_task/common%20Widgets/Onboarding%20Widgets/onboardinginfo.dart';
 
 class OnbordingItem {
   List<Onbordinginfo> Item = [

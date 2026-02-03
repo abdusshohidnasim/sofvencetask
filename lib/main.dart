@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'Features/Onboarding/Provider/onbording_provider.dart';
 import 'Features/Onboarding/Screen/onboarding_screens.dart';
 
 void main() {
   runApp(
       MultiProvider(
         providers: [
-          ChangeNotifierProvider(create: (context) => ),
+          ChangeNotifierProvider(create: (context) => OnboardingProvider()),
 
         ],
         child: const MyApp(),
@@ -23,7 +24,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Onbording(),
+      debugShowCheckedModeBanner: false,
+      home:  Onbording(),
     );
   }
 }
