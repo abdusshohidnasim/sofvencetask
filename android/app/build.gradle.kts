@@ -7,7 +7,7 @@ plugins {
 
 android {
     namespace = "com.example.sofvence_task"
-    compileSdk = flutter.compileSdkVersion
+    compileSdk = 36
     ndkVersion = flutter.ndkVersion
 
     compileOptions {

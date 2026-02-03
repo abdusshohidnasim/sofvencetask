@@ -18,6 +18,7 @@ class Onbording extends StatelessWidget {
     double Screenwith = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Container(
+        height: Screenhight,
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: [customize.BackgrountColor1, customize.BackgrountColor2],
@@ -85,7 +86,7 @@ class Onbording extends StatelessWidget {
                               color: customize.TextColors,
                             ),
                           ),
-                          20.h,
+                          40.h,
                           // Indicator
                           SmoothPageIndicator(
                             controller: provider.Pagecontoller,
@@ -103,7 +104,8 @@ class Onbording extends StatelessWidget {
                               activeDotColor: customize.ButtonColors,
                             ),
                           ),
-                          20.h,
+                          60.h,
+
                           // Button
                           Button(
                             context: context,
